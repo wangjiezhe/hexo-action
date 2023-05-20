@@ -87,7 +87,7 @@ jobs:
     # Use the output from the `deploy` step(use for test action)
     - name: Get the output
       run: |
-        echo "${{ steps.deploy.outputs.notify }}"
+        echo "${{ steps.deploy.outputs.result }}"
 ```
 
 ### 🌽How to install additional third party node modules?

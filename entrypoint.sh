@@ -29,4 +29,4 @@ else
     hexo g -d -m "$INPUT_COMMIT_MSG"
 fi
 
-echo "Deploy complate." >> $GITHUB_OUTPUT
+echo "result=Success" >> $GITHUB_OUTPUT
