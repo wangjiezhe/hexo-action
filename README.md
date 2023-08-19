@@ -3,6 +3,8 @@
 <a href="https://github.com/marketplace/actions/hexo-action"><img alt="View Action" src="https://img.shields.io/badge/action-marketplace-blue.svg?logo=github&color=orange"></a>
 <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg?logo=github"></a>
 
+> **This is forked form [sma11black/hexo-action](https://github.com/sma11black/hexo-action) with some upgrade and enhancement to support latest hexo**
+
 This Github Action automating hexo deployment workflow, to allow you to leverage GitHub Actions to publish your hexo site on Github Pages.
 
 ## 🍑Usage
