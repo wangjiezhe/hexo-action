@@ -3,7 +3,7 @@
 <a href="https://github.com/marketplace/actions/hexo-action"><img alt="View Action" src="https://img.shields.io/badge/action-marketplace-blue.svg?logo=github&color=orange"></a>
 <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg?logo=github"></a>
 
-> **This is forked form [sma11black/hexo-action](https://github.com/sma11black/hexo-action) with some upgrade and enhancement to support latest hexo**
+> **This is forked form [zjjfly/hexo-action](https://github.com/zjjfly/hexo-action) with some upgrade and enhancement to support latest hexo**
 
 This Github Action automating hexo deployment workflow, to allow you to leverage GitHub Actions to publish your hexo site on Github Pages.
 
@@ -80,7 +80,7 @@ jobs:
     # Deploy hexo blog website.
     - name: Deploy
       id: deploy
-      uses: zjjfly/hexo-action@v1.0.5
+      uses: wangjiezhe/hexo-action@v1.0.6
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
         user_name: your github username  # (or delete this input setting to use bot account)

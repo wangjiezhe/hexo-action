@@ -1,6 +1,6 @@
 FROM node:20.2.0-buster-slim
 
-LABEL version="1.0.5"
+LABEL version="1.0.6"
 LABEL repository="https://github.com/zjjfly/hexo-action"
 LABEL homepage="https://zjjfly.github.io"
 LABEL maintainer="zjjfly <zjjfly@gmail.com>"
