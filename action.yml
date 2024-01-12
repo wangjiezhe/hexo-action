@@ -1,6 +1,6 @@
-name: 'Hexo Action V2'
+name: 'Hexo Action V3'
 description: 'Hexo CI/CD action for automating deployment.'
-author: 'sma11black,zjjfly'
+author: 'sma11black,zjjfly,wangjiezhe'
 inputs:
   user_name:
     description: 'Github user name'
