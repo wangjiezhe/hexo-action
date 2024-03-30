@@ -26,6 +26,13 @@ git config --global user.email "$INPUT_USER_EMAIL"
 # install hexo env
 npm install hexo-deployer-git --save
 
+# add .nojekyll
+if [ "$INPUT_NOJEKYLL" = "true" ]
+then
+    mkdir public
+    touch public/.nojekyll
+fi
+
 # deployment
 if [ "$INPUT_COMMIT_MSG" = "none" ]
 then
