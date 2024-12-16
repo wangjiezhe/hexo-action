@@ -36,24 +36,16 @@ fi
 # deployment
 if [ "$INPUT_COMMIT_MSG" = "none" ]
 then
-    pushd .deploy_git
-    git init
-    git lfs install
-    popd
-    hexo g -d
+    (mkdir -p .deploy_git; cd .deploy_git; git init; git lfs install)
 elif [ "$INPUT_COMMIT_MSG" = "" ] || [ "$INPUT_COMMIT_MSG" = "default" ]
 then
     # pull original publish repo
     NODE_PATH=$NODE_PATH:$(pwd)/node_modules node /sync_deploy_history.js
-    pushd .deploy_git
-    git lfs install
-    popd
+    (cd .deploy_git; git lfs install)
     hexo g -d
 else
     NODE_PATH=$NODE_PATH:$(pwd)/node_modules node /sync_deploy_history.js
-    pushd .deploy_git
-    git lfs install
-    popd
+    (cd .deploy_git; git lfs install)
     hexo g -d -m "$INPUT_COMMIT_MSG"
 fi
 
