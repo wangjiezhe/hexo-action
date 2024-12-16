@@ -23,6 +23,9 @@ EOF
 git config --global user.name "$INPUT_USER_NAME"
 git config --global user.email "$INPUT_USER_EMAIL"
 
+# configure LFS
+git lfs install
+
 # install hexo env
 npm install hexo-deployer-git --save
 
