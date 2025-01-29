@@ -80,7 +80,7 @@ jobs:
     # Deploy hexo blog website.
     - name: Deploy
       id: deploy
-      uses: zjjfly/hexo-action@v1.0.5
+      uses: zjjfly/hexo-action@v1.0.6
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
         user_name: your github username  # (or delete this input setting to use bot account)
